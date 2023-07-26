@@ -4,7 +4,7 @@ from flask import Flask,jsonify
 
 
 app = Flask(__name__)
-model = joblib.load("model.joblib")
+model=joblib.load("model.joblib")
 
 #
 #@app.route('/predict_api',methods=['POST'])
