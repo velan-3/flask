@@ -1,10 +1,10 @@
 import numpy
-import pickle
+import joblib
 from flask import Flask,jsonify
 
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = joblib.load("model.joblib")
 
 #
 #@app.route('/predict_api',methods=['POST'])
